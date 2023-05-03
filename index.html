@@ -1,25 +1,25 @@
 <div id="app">
   <div class="container">
     <div class="header">
-      <span class="negrita">Nombre:</span> Sergio Hurtado Bravo
-    <br />
+      <span class="bold">Nombre:</span> Sergio Hurtado Bravo
+      <br />
 
-    <span class="negrita">URL:</span>
+      <span class="bold">URL:</span>
 
-    <a href="https://js-1whtwz.stackblitz.io" target="_blank">
-      js-1whtwz.stackblitz.io
-    </a>
+      <a href="https://js-1whtwz.stackblitz.io" target="_blank">
+        js-1whtwz.stackblitz.io
+      </a>
 
-    <br />
+      <br />
 
-    <span class="negrita">GitHub:</span>
+      <span class="bold">GitHub:</span>
 
-    <a
-      href="https://github.com/sergiohdob/08MBID---Visualizacion-de-Datos"
-      target="_blank"
-    >
-      github.com/sergiohdob/08MBID---Visualizacion-de-Datos
-    </a>
+      <a
+        href="https://github.com/sergiohdob/08MBID---trabajo-practico"
+        target="_blank"
+      >
+        github.com/sergiohdob/08MBID---trabajo-practico
+      </a>
     </div>
     
     <h1>Evolución del turismo en las costas andaluzas, 2016-2022</h1>
@@ -38,40 +38,93 @@
     <p>
       La gestión necesita contestar las siguientes preguntas:
       <ul>
-        <li>¿Cuáles son las poblaciones costeras con mayor número de pernoctaciones?</li>
-        <li>¿Dónde existe un menor número de habitaciones pero existe una alta demanda?</li>
-        <li>¿Cuáles son los ingresos medios por habitación en las zonas costeras?</li>
+        <li class="bold">¿Cuáles son las poblaciones costeras con mayor número de pernoctaciones?</li>
+        <li class="bold">¿Cómo ha evolucionado el número de habitaciones disponibles en las zonas costeras más visitadas?</li>
+        <li class="bold">¿Cuál ha sido la evolución de los ingresos medios por habitación en las zonas costeras más visitadas?</li>
       </ul>
     </p>
 
     <h2>Análisis</h2>
 
-    <iframe
-      title="Grado de ocupación e ingresos por habitaciones"
-      aria-label="Mapa"
-      id="datawrapper-chart-1l9Ou"
-      src="https://datawrapper.dwcdn.net/1l9Ou/1/"
-      scrolling="no"
-      frameborder="0"
-      style="width: 0; min-width: 100% !important; border: none"
-      height="480"
-      data-external="1"
-    ></iframe>
-    <script type="text/javascript">
-      !(function () {
-        'use strict';
-        window.addEventListener('message', function (a) {
-          if (void 0 !== a.data['datawrapper-height']) {
-            var e = document.querySelectorAll('iframe');
-            for (var t in a.data['datawrapper-height'])
-              for (var r = 0; r < e.length; r++)
-                if (e[r].contentWindow === a.source) {
-                  var i = a.data['datawrapper-height'][t] + 'px';
-                  e[r].style.height = i;
-                }
-          }
-        });
-      })();
+    <h3>¿Cuáles son las poblaciones costeras con mayor número de pernoctaciones?</h3>
+
+    <p>
+      En primer lugar, observamos cómo se distribuye el grado de ocupación y los ingresos por habitación por la costa de Andalucía:
+    </p>
+
+    <iframe title="Grado de ocupación e ingresos por habitaciones" aria-label="Mapa" id="datawrapper-chart-1l9Ou" src="https://datawrapper.dwcdn.net/1l9Ou/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="443" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
     </script>
+
+    <p>
+      Donde el grueso de ocupación e ingresos se localiza en La Costa del Sol y en La Costa de la Luz.
+    </p>
+
+    <p>
+      Si observamos las pernoctaciones realizadas en las distintas poblaciones en el último año (2022), teniendo en cuenta la procedencia del turismo: española o extranjera, podremos obtener
+      información acerca de qué poblaciones fueron más interesantes en el último periodo y establecer así un primer ranking:
+    </p>
+
+    <iframe title="Pernoctaciones 2022 por residencia" aria-label="Barras apiladas" id="datawrapper-chart-zGh7I" src="https://datawrapper.dwcdn.net/zGh7I/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="802" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p>
+      En la figura anterior, podemos observar cómo la población de Torremolinos es la primera población costera con mayor número de pernoctaciones durante el periodo de 2022.
+    </p>
+
+    <p>
+      Teniendo presente las tres ciudades costeras más visitadas en el 2022 (Torremolinos, Benalmádena y Málaga), podemos visualizar el histórico de estas, permitiendo ver cuál tiene una mayor evolución y cuál podría ser el centro de
+      la próxima campaña de la firma hotelera:
+    </p>
+
+    <iframe title="Evolución de las ciudades costeras principales" aria-label="Interactive line chart" id="datawrapper-chart-RTI9O" src="https://datawrapper.dwcdn.net/RTI9O/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="857" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p>
+      Podemos observar cómo las tres ciudades están volviendo a la situación anterior a la crisis del Covid-19, por tanto podemos concluir que las tres poblaciones con mayor número de
+      pernoctaciones anuales son Torremolinos, Benalmádena y Málaga por orden de pernoctaciones totales anuales, donde la evolución indica que se situarán de nuevo en máximos históricos.
+    </p>
+
+    <h3>¿Cómo ha evolucionado el número de habitaciones disponibles en las zonas costeras más visitadas?</h3>
+
+    <p>
+      En la siguiente figura podemos observar la evolución de las plazas disponibles estimadas por año y ciudad:
+    </p>
+
+    <iframe title="Evolución de plazas disponibles" aria-label="Interactive line chart" id="datawrapper-chart-YxXWq" src="https://datawrapper.dwcdn.net/YxXWq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="234" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p>
+      Observamos como, al igual que ocurría con la evolución de las pernoctaciones anuales, tras la crisis del Covid-19, las plazas disponibles en los hoteles aumentan hasta niveles de 2019, donde Torremolinos sigue liderando el gráfico.
+    </p>
+
+    <h3>¿Cuál ha sido la evolución de los ingresos medios por habitación en las zonas costeras más visitadas?</h3>
+
+    <p>
+      Por último, la gestión de la firma hotelera necesita conocer los precios medios de las habitaciones por noche en las diferentes zonas vistas para fijar una campaña ajustada a la zona pero que
+      a su vez permita un margen de beneficios. Es por ello que en la siguiente figura se puede visualizar cómo ha evolucionado este precio y qué zonas han ostentado precios más altos o más bajos dependiendo del año:
+    </p>
+
+    <iframe title="Ingresos medios por habitación/noche" aria-label="Barras agrupadas" id="datawrapper-chart-08LuD" src="https://datawrapper.dwcdn.net/08LuD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="632" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p>
+      Podemos observar un comportamiento interesante en el precio de Benalmádena, puesto que, durante y a partir de la crisis del Covid-19, ha liderado los precios más caros por habitación por encima
+      de Málaga, que hasta ese momento había tenido un gran margen respecto a las otras dos ciudades. Sin embargo, el último año (2022), representa una vuelta a los precios originales en las playas de
+      Málaga, volviendo a ganar distancia respecto a los precios de Torremolinos y Benalmádena.
+    </p>
+
+    <h2>Conclusión</h2>
+
+    <p>
+      Gracias a las visualizaciones anteriores, se puede llegar a la conclusión de que estos tres puntos son ciudades interesantes para futuras campañas, donde los niveles de ocupación e ingresos
+      ya son similares a los vistos antes de la crisis del Covid-19.
+    </p>
+
+    <h2>Referencias</h2>
+    <ul>
+      <li><a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia" target="_blank">IECA - Instituto de Estadística y Cartografía de Andalucía</a></li>
+      <li><a href="https://www.ine.es/">INE - Instituto Nacional de Estadística</a></li>
+      <li><a href="https://colab.research.google.com/drive/10PrxADkaU7nJ_En5uePvYnxEu0cJVBTU?usp=sharing">Jupyter Notebook de transformaciones - Google Colab</a></li>
+    </ul>
   </div>
 </div>
